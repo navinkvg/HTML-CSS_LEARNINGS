@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>
+                <label> Personal Information</label>
+            </legend>
+
+                <label></label> Name :
+                <input placeholder="Enter your name" type="text"></label>
+                <br><br>
+                <label>Email :
+                <input placeholder="abc@gmail.com" type="email"></label>
+                <br><br>
+                <label>Gender : 
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <br><br>
+                <label>DOB :
+                <input placeholder="Age" type="date"></label>
+                <br><br>
+                <label>Address :
+                <input placeholder="Enter your address" type="text"></label>
+                <br><br>
+                <label>Phone Number :
+                <input placeholder="Enter your phone number" type="text"></label>
+                <br><br>
+                <label>Country :
+                <select>
+                    <option >India</option>
+                    <option >America</option>
+                    <option >Canada</option>
+                </select>
+                <br><br>
+
+                <label>Range : 
+                <input type="range" id="range" min="0" max="100" oninput="rangeValue.innerText = this.rangeValue"></label>
+                    <br><br>
+                <label for="browser">choose your browser: 
+                <!-- <input type="text" name="browser" id="browser"> </label> -->
+                <!-- <datalist id="browsers"> -->
+                <select>    
+                    <option >Internet Explorer</option>
+                    <option >Google chrome</option>
+                    <option >Brave</option>
+                </select>
+                <br><br>
+                <label for="browser">Choose your browser from the title</label>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Brave">
+            </datalist> <br><br>
+                <!-- <label for="cars">Choose a car : </label>
+                <select id="cars" name="cars">
+                    <option value="audi">Audi</option>
+                    <option value="benz">Benz</option>
+                    <option value="ford">Ford</option>
+                    <option value="volvo">Volvo</option>
+                </select> -->
+                <!-- <br><br> -->
+                <label for="cars">Choose the car</label>
+            <select name="cars" id="cars">
+                <optgroup label="German Cars">
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="audi">audi</option>
+                </optgroup>
+                <optgroup label="American car">
+                    <option value="ford">ford</option>
+                    <option value="Chevy">Chevy</option>
+                </optgroup>
+            </select>
+
+                
+            </fieldset>
+            <br>
+            <button>Submit</button>
+        </form>
+    
+</body>
+</html>
