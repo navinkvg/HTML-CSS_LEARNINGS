@@ -1,0 +1,143 @@
+<---------------------->codeshare.io/<------------------------------>
+
+Classifications of HTML doc type
+    ->Strict
+    -> Transitional
+    -> Frameset
+
+
+DOM (Document Object Model)
+    Document - HTML page
+    Object - Keys and values
+
+
+Extensions
+    Live Server
+    Live preview
+
+
+                    HTML
+    
+    HEAD                            BODY
+
+ META TITLE                        H1:HELLO
+
+
+ Difference between tags and elements in HTML
+    * Tags are represented using angular braces.
+        => <h1> Opening tag 
+        => </h1> Closing tag
+    * Elements are the content between the opening and closing tags.
+        => <h1> Navin </h1>
+
+UTF
+    ->Unicode
+    ->UTF-8 (Current)
+    ->UTF-16
+    ->UTF-32
+
+
+Tags in HTML
+    ->Presentational
+    ->Table
+    ->Form
+    ->List
+    ->Media
+    ->Graphics tag (Only used in HTML).
+
+
+DIFFERENCE BETWEEN Div and Span Tags
+* Div : is a block level element.
+* Span : is an inline element.
+
+* Div : can be used to group block level elements.
+* Span : can be used to group inline elements.
+
+* Div : can be used to create a section in a document.
+* Span : can be used to create a section in a paragraph.
+
+* Div : can be used to create a container for a section.
+* Span : can be used to create a container for a section in a paragraph.
+
+* Div : Manipulates HTML directly
+* Span : Manipulates CSS directly
+
+
+
+<----------------------------------->  Types of Tags  <----------------------------------->
+
+
+PRESENTATIONAL Tags 
+    * Paragraph
+    * Heading h1 - h6
+    * Center
+    * Bold
+    * Italic
+    * Underline
+    * Superscript
+    * Subscript
+    * Strong 
+    * Marque
+    * em
+    * superset
+    * hr
+    * br
+    * pre
+    * li
+    * bdo
+
+
+TABLE Tags
+    * table
+    * tr (Table row)
+    * td
+    * th
+    * caption
+    * colgroup
+    * col
+    * tbody
+    * tfoot
+    * thead
+
+
+ATTRIBUTES
+    * Span
+    * Border
+    * Row Span
+    * Col Span
+    * Align
+    * Place holder
+
+
+LISTS
+    * Unordered List <ul></ul>
+    * Ordered List   <ol></ol>
+    * List           <li></li>
+
+
+FORM
+    * Label
+    * Input
+    * Textarea
+    * Select
+    * Button
+    * Fieldset
+    * Legend
+
+
+MEDIA tags  
+    * Audio
+    * Video
+    * Source
+    * Track
+    * Embed
+    * Iframe
+
+
+GRAPHICS  (Only in HTML5)
+    * svg
+    * canvas
+    * img
+    * map
+
+<----------------------------------------------------------------------------------------->

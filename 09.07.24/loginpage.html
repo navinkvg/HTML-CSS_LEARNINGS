@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS implementation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            align-items: flex-start;
+            margin: 100px;
+            background-color: #0d0a0b;
+            background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+        }
+        .heading
+        {
+            text-align: center;
+            font-size: medium;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .logo
+        {
+            
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            margin: 0;
+            padding: 0;
+            background-color: paleturquoise;
+        }
+            
+        .page
+        {
+            /* color: rgb(34, 255, 0); */
+            color: white;
+            background-color: rgb(255, 255, 255,0.2);
+            border-radius: 60px;
+            padding: 40px;
+        }
+        
+        fieldset
+        {
+            align-items: center;
+            text-align: center;
+            border: 10px solid rgba(0, 0, 0, 0.749);
+            border-radius: 50px;
+        }
+
+        .intro
+        {
+            text-align: center;
+            margin: 60px;
+            padding: 0;
+            color: white;
+        }
+
+        .login
+        {   
+            
+            text-align: center;
+            /* background:greenyellow; */
+        }
+        .loginbutton
+        {
+            text-align: center;
+            
+        }
+
+        .fp
+        {
+            color: lightskyblue;
+        }
+        
+        .hd
+        {
+            color: whitesmoke;   
+        }
+        .tc
+        {
+            color: aliceblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <style>
+        
+    </style>
+    <center><img src="download.jpeg" class="logo" alt="Vsb Enineering college logo"></center>    
+    <div class="heading"><h1>V.S.B Engineering College</h1></div>
+    <div class="intro"><h3><i>Place for Placement</i></h3></div>
+    
+    <form>
+        <div class="page">
+        <fieldset>
+            <legend class="hd" ><strong><h3>Student Login</h3></strong></legend><br>
+            
+            <label>
+                Name: <input placeholder="Enter your name" type="text" required>
+            </label><br><br>
+            <label>
+                Reg.no : <input placeholder="Enter your reg no" type="text" required>
+            </label><br><br>
+            <LABEL>
+                Gender: <input type="radio">
+                Male <input type="radio">
+                Female
+            </LABEL><br><br>
+            <label>
+                Phone : <input placeholder="mobile" required>
+            </label><br><br>
+            <label>
+                Dob : <input placeholder="Date of birth" type="date" required>
+            </label><br><br>
+            <label>
+                Email : <input placeholder="abc@gmail.com" type="text" required>
+            </label><br><br>
+            <label>
+                Password : <input placeholder="Enter your password" type="password" required>
+            </label><br><br>
+            <label><a href="" class="fp">forgot password</a></label>
+            <label><br><br>
+                <input type="checkbox"> Remember me
+            </label>
+            <br><br>
+            <div class="loginbutton">
+                <input type="submit" value="Login" class="login"></div>    
+        </fieldset></div>
+    </form><br><br><br>
+
+
+    <form>
+        <div class="page">
+        <fieldset>
+            <legend class="hd"><Strong><h3>Student Enquiery</h3></Strong></legend>
+            <br>
+        <label for="dept">
+            Wish to Study :
+            <select>
+                <option>Bachelor of Engineering</option>
+                <option>Bachelor of Technology</option>
+            </select>  
+        </label><br><br>
+        <label for="dept">
+            Available Branch :
+            <select>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics and Communication</option>
+                </select>
+        </label>
+        <br><br>
+        <label>
+            10th % : <input placeholder="10th percentage" type="number"> 
+        </label><br><br>
+        <label>
+            12th % : <input placeholder="12th percentage" type="number"> 
+        </label><br><br>
+        <a href="https://www.drngpit.ac.in/admission/cutoff-calculator" class="cutoff"><button>cut-off calculator</button> </a><br><br>
+        <label>
+            Cut-off: <input placeholder="your cut-off" >
+        </label><br><br>
+        <label>
+            <input type="checkbox" class="tc"> I agree to the terms and conditions</label>
+        <br><br>
+        <center><input type="submit" value="Next" class="login"></center>
+    </div>
+    </fieldset>
+    </div>
+    </form>
+
+</body>
+</html>
