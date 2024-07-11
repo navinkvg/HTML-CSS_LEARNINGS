@@ -1,0 +1,92 @@
+<-------------------------------------------------->JavaScript<----------------------------------------------------->
+
+
+Programming language / Scripting language
+
+The language uses interpreter is a Scripting language.
+
+    *Python (Advanced scripting language)
+    *Java (Advanced scripting language)
+    *JavaScript (Advanced scripting language)
+
+The lanugage uses a compiler is called as Programming language.
+
+    *C
+    *C++
+    *Java
+
+
+JavaScript Introduction
+    
+    -> Internet explorer cant display scripts
+    -> Netscape 2.0 can display scripts by Microsoft
+    
+*Standardized Association Named as
+ 
+    -> ECMA (European Computer Manufacturers Association).
+    -> ECMA 6 - uses JavaScript.
+
+
+*Data types in JavaScript
+    
+    ->var : global scoped variable (mutable)
+    ->let : block scoped variable (mutable)
+    ->const : block scoped variable (immutable)
+
+*Invoke js using html
+
+    ->Head : Importing Libraries
+    ->Beginning of Body : To use DOM
+    ->End of Body : Criterias (Clicking Events). 
+
+(To avoid Lagging of the Webpage ,So the invoking positions are classified).
+
+*Scripting 
+
+    ->Internal Scripting : (<script></script>)
+    ->External Scripting : (src)
+
+*Data types
+
+    -> Primitive
+        -> Number
+        -> Bigint
+        -> String
+        -> Boolean
+        -> Null
+        -> Undefined
+        
+    -> Non-Primitive
+
+        -> Object
+        -> Array
+        -> Function
+        -> Regex
+        -> Date
+        -> Map
+        -> Set
+        -> Symbol
+
+ => Function       
+    -> Named / Normal
+    -> Anonymous / Lambda
+    -> Arrow Function
+
+
+* Hoisting in js
+    
+    -> Hoisting is the process of moving the declaration of a variable or function to the top of the scope in which it is defined.
+        
+        => Normal fuinction (inbuilt-Hoisting)
+        => Anonymous (No Hoisting)
+        => Arrow (No Hoisting)
+
+
+* Threading in Java 
+    
+    -> Java is a single-threaded programming language. It means that only one statement can be executed at a time.
+
+
+* Equity operator
+
+    -> 
