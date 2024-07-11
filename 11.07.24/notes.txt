@@ -1,0 +1,38 @@
+Array 
+    In js, array is not invoked directly
+    It is a part of the object.
+
+js -> typeof(Works based on memory allocation) in memory arrays are stored in the form of objects.
+      So it returns object[1,2,3,4,5] =>{0:1,1:2.....} key->index value ->data
+
+=> array.isArray => To check whether it is an array or not.
+
+template literals
+-----------------
+
+    => Used as placeholders
+    ${} Acts as placeholder
+
+
+Object=> Creation
+-----------------
+
+    => It is a collection of key value pairs.
+    => It is a part of the object.
+
+
+
+
+REST ,SPREAD property
+---------------------
+    => SPREAD is used to spread the properties of one object into another.
+    => REST is used to collect  the remaining properties into a new object.
+
+
+JSON
+-----------------
+    => Java Script Object Notation
+
+    =>json - parse -> String to object
+    =>json - stringify -> Object to String
+
