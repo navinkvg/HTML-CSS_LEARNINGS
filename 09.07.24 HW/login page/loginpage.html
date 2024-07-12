@@ -14,10 +14,34 @@
 				<input type="text" id="username" name="username" required><br><br>
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" required><br><br>
+				<span id="password-strength"></span><br><br>
 				<input type="submit" value="Login">
 			</form>
 			<p>Don't have an account? <a href="#">Sign up</a></p>
 		</div>
 	</div>
+
+	<script>
+		function checkPasswordStrength(password) {
+			if (password.length < 6) {
+				return "Weak";
+			} else {
+				let hasLetter = /[a-zA-Z]/.test(password);
+				let hasDigit = /[0-9]/.test(password);
+				if (hasLetter && hasDigit) {
+					return "Strong";
+				} else {
+					return "Medium";
+				}
+			}
+		}
+
+		document.getElementById('password').addEventListener('input', function() {
+			const strength = checkPasswordStrength(this.value);
+			const strengthElement = document.getElementById('password-strength');
+			strengthElement.textContent = `Password Strength: ${strength}`;
+			strengthElement.style.color = strength === "Strong" ? "green" : (strength === "Medium" ? "orange" : "red");
+		});
+	</script>
 </body>
 </html>

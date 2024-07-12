@@ -13,12 +13,14 @@
 				<input type="text" id="username" name="username" required><br><br>
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" required><br><br>
+				<span id="email-validity"></span><br><br>
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" required><br><br>
+				<span id="password-strength"></span><br><br>
 				<label for="dob">Dob:</label>
 				<input type="date" id="dob" name="dob" required><br><br><br>
-				<label>Phone:</label>
-				<input type="text" id="Phone"><br><br>
+				<label for="phone">Phone:</label>
+				<input type="text" id="phone" name="phone"><br><br>
 				<label for="confirm-password">Confirm Password:</label>
 				<input type="password" id="confirm-password" name="confirm-password" required><br><br>
 				<input type="submit" value="Sign up">
@@ -26,5 +28,40 @@
 			<p>Already have an account? <a href="#">Login</a></p>
 		</div>
 	</div>
+
+	<script>
+		function checkPasswordStrength(password) {
+			if (password.length < 6) {
+				return "Weak";
+			} else {
+				let hasLetter = /[a-zA-Z]/.test(password);
+				let hasDigit = /[0-9]/.test(password);
+				if (hasLetter && hasDigit) {
+					return "Strong";
+				} else {
+					return "Medium";
+				}
+			}
+		}
+
+		function validateEmail(email) {
+			const re = /^[a-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+			return re.test(email);
+		}
+
+		document.getElementById('password').addEventListener('input', function() {
+			const strength = checkPasswordStrength(this.value);
+			const strengthElement = document.getElementById('password-strength');
+			strengthElement.textContent = `Password Strength: ${strength}`;
+			strengthElement.style.color = strength === "Strong" ? "green" : (strength === "Medium" ? "orange" : "red");
+		});
+
+		document.getElementById('email').addEventListener('input', function() {
+			const isValid = validateEmail(this.value);
+			const validityElement = document.getElementById('email-validity');
+			validityElement.textContent = isValid ? "Valid Email" : "Invalid Email";
+			validityElement.style.color = isValid ? "green" : "red";
+		});
+	</script>
 </body>
 </html>
