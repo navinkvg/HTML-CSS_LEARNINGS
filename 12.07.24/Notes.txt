@@ -1,0 +1,48 @@
+                                AJAX
+                              ________
+     
+        => Asynchronous JavaScript XML Format.
+        
+        <%xml>
+
+
+                                React
+                              ---------
+                      
+            
+js => Developed by Facebook.
+React js => Developed by Facebook in 2013
+  It is a library in JavaScript.
+
+  * React 
+    SPA -> Single Page Application.
+    => It is a web application that works inside a single web page , It doesnot refresh again because, 
+    => it looks awkward when doing any activity in the page.
+    => Control flows in unidirectional.
+    => It uses JSX format.(JavaScript XML)
+    => All elements is set closing Elements.  
+    => Props are used to get data from elements.(Property)
+
+            npm => Node package manager
+            npx => Node package executor
+                    npx => basic packages cannot be installed in npx
+                    npx => basic packages can be installed in npm
+            1. npx create-react-app (appname)-app.
+            
+
+
+ => Virtual DOM
+    * It is a specialized DOM concept which take the shallow copy of the actual DOM
+    * In react, When you make changes in it, It manipulates your vrtual DOM, then your HTML DOM render.
+    * It is a lightweight DOM.
+
+  => components of React
+    * Functional components
+    * Class components
+    * Stateful components
+    * Stateless components
+    * Props
+    * State
+
+Function based -> Stateless component
+  steps to
